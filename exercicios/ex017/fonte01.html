@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        body {
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+            /* 
+            Medidas Absolutas
+            cm, em, in, px, pt, pc
+            
+            Medidas Relativas
+            em, ex, rem, vm, vh, %
+            16px geralmente é 1em
+            */
+            font-size: 1em;
+
+            /* lighter normal bold bolder */
+        }
+
+        h1 {
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            /* shorthand font 
+            - font-style -> font-weight -> font-size -> font-family   */
+            font: italic bolder 3em 'Work Sans', san-serif
+        }
+
+        h2 {
+            font: bold 2em 'Work Sans'
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, eaque aperiam? Sint similique explicabo vel, ex cum commodi omnis laudantium sequi ipsam laborum consequuntur, maxime assumenda aut culpa necessitatibus. Sit.loren Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci saepe aperiam necessitatibus impedit, assumenda vel a architecto placeat nostrum nulla itaque ab nihil, neque consequatur debitis molestiae, hic distinctio et?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, id reprehenderit! Consequatur asperiores, quasi maxime ea consequuntur ad harum! Beatae, reiciendis quaerat. Adipisci et voluptatem, autem pariatur perferendis similique fugit.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi iure magnam tempora ipsam. Omnis consequatur ullam ipsum, corporis ex reprehenderit sunt inventore iure quidem vitae unde, assumenda molestiae a vel?</p>
+</body>
+</html>

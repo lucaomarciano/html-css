@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            background-color:  dimgrey;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: rgb(83, 83, 83);
+            padding: 5px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;/* também podemos colocar os 4 valores e ver como fica no dvtols no navegador*/
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
+        }
+
+        article {
+            background-color: lightgrey;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: #696868;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 4px;
+            margin: 0px;
+            text-align: center;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        #bola {
+            height: 100px;/* Altura */
+            width: 100px;/* Largura */
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <header><!-- Cabeçalho do site -->
+        <h1>Meu site</h1>
+        <nav><!-- Navegação -->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main><!-- Parte principal dos conteudos -->
+        <section id="assuntos"><!--- Seções de assuntos -->
+            <p>Esportes Políticas e Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article><!-- Artigos -->
+                <h2>Novidades na Política</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi reprehenderit veniam voluptate iste nesciunt impedit maxime saepe eius. Vitae voluptatem debitis harum blanditiis magnam voluptate facere beatae, tenetur sunt praesentium!</p>
+                <aside><!-- Autor -->
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Novidades na Tecnologia</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quos vel natus earum alias, voluptatem rerum delectus consequuntur fugiat est aliquam nostrum odit ipsum adipisci cupiditate, atque eos, laudantium ducimus.</p>
+                <aside>
+                    <p>Artigo escrito por José <B></B>ezerra</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer><!-- Rodapé -->
+        <p>Desenvolvido pelo CursoemVideo</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
