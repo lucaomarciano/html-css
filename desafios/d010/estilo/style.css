@@ -1,14 +1,18 @@
+/* Define a codificação de caracteres */
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');/*fonte do google fonts*/
+/* Importa fontes externas do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-@font-face {/*fonte baixada da internet*/
+/* Importa uma fonte personalizada baixada da internet */
+@font-face {
     font-family: 'Android';
     src: url('../fontes/idroid.otf') format('opentype');
     font-weight: normal;
 }
 
-:root {/*cria as variaveis do css*/
+/* Define variáveis globais para cores e fontes */
+:root {
     --cor0: #c5ebd6;
     --cor1: #83e1ad;
     --cor2: #3ddc84;
@@ -21,20 +25,24 @@
     --fonte-android: 'Android', cursive;
 }
 
-* {/*configurações globais em todo o código*/
+/* Remove margens e preenchimentos padrão de todos os elementos */
+* {
     margin: 0px;
     padding: 0px;
 }
 
+/* Define o estilo geral do corpo da página */
 body {
     background-color: var(--cor0);
     font-family: var(--fonte-padrao);
 }
 
+/* Adiciona um ícone após links externos */
 .externo::after {
-    content: '\00A0\1F517';
+    content: '\\00A0\\1F517';
 }
 
+/* Estiliza o cabeçalho */
 header {
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
     min-height: 150px;
@@ -42,6 +50,7 @@ header {
     padding-top: 40px;
 }
 
+/* Estiliza o título dentro do cabeçalho */
 header h1 {
     color: white;
     font-family: var(--fonte-destaque);
@@ -51,24 +60,26 @@ header h1 {
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.253);
 }
 
+/* Estiliza o parágrafo dentro do cabeçalho */
 header > p {
     font-family: var(--fonte-padrao);
     font-size: 1.2em;
     color: white;
     max-width: 600px;
-    padding-left: 10px;
-    padding-right: 10px;
     margin: auto;
+    padding: 10px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.253);
-    margin-bottom: 20px;
+    padding-bottom: 30px;
 }
 
+/* Estiliza a barra de navegação */
 nav {
     background-color: var(--cor5);
     padding: 10px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.185);
 }
 
+/* Estiliza os links dentro da barra de navegação */
 nav > a {
     color: var(--cor1);
     padding: 10px;
@@ -78,11 +89,13 @@ nav > a {
     transition-duration: 0.5s;
 }
 
+/* Efeito de hover nos links da navegação */
 nav > a:hover {
     background-color: var(--cor3);
     color: var(--cor5);
 }
 
+/* Estiliza a área principal do conteúdo */
 main {
     min-width: 300px;
     max-width: 1000px;
@@ -95,10 +108,10 @@ main {
     border-bottom-left-radius: 10px;
 }
 
+/* Estiliza os títulos dentro do conteúdo principal */
 main h1 {
     color: var(--cor5);
     font-family: var(--fonte-android);
-    font-weight: normal;
     font-size: 1.8em;
 }
 
@@ -106,11 +119,11 @@ main h2 {
     font-family: var(--fonte-android);
     color: var(--cor4);
     font-size: 1.3em;
-    font-weight: normal;
     background-image: linear-gradient(to right, var(--cor1), transparent); 
     text-indent: 8px;
 }
 
+/* Estiliza os parágrafos dentro do conteúdo principal */
 main p {
     margin: 15px 0px;
     text-align: justify;
@@ -118,11 +131,13 @@ main p {
     line-height: 2em;
 }
 
+/* Destaca palavras em negrito */
 main strong {
     color: var(--cor4);
     font-weight: bold;
 }
 
+/* Estiliza os links dentro do conteúdo principal */
 main a {
     text-decoration: none;
     font-weight: bold;
@@ -131,24 +146,27 @@ main a {
     padding: 2px 6px;
 }
 
+/* Efeito de hover nos links do conteúdo principal */
 main a:hover {
     text-decoration: underline;
     color: var(--cor4);
 }
 
+/* Define largura total para imagens */
 main img {
     width: 100%;
 }
 
+/* Estiliza a área de vídeos responsivos */
 .video {
     background-color: var(--cor5);
     margin: 0px -20px 30px -20px;
     padding: 20px;
     padding-bottom: 59%;
-
     position: relative;
 }
 
+/* Ajusta o iframe do vídeo para ocupar corretamente a área */
 .video > iframe {
     position: absolute;
     top: 5%;
@@ -157,12 +175,14 @@ main img {
     height: 90%;
 }
 
+/* Estiliza imagens menores dentro do conteúdo principal */
 main .pequena {
     max-width: 350px;
     display: block;
     margin: auto;
 }
 
+/* Estiliza a seção lateral (aside) */
 aside {
     background-color: var(--cor1);
     padding: 10px;
@@ -170,6 +190,7 @@ aside {
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.274);
 }
 
+/* Estiliza os títulos dentro do aside */
 aside > h3 {
     background-color: var(--cor4);
     color: white;
@@ -178,12 +199,14 @@ aside > h3 {
     border-radius: 10px 10px 0px 0px;
 }
 
+/* Estiliza listas dentro do aside */
 aside > ul {
-    list-style-type: '\2714\00A0\00A0';
+    list-style-type: '\\2714\\00A0\\00A0';
     list-style-position: inside;
     columns: 2;
 }
 
+/* Estiliza o rodapé */
 footer {
     background-color: var(--cor5);
     color: white;
@@ -192,12 +215,14 @@ footer {
     padding: 5px;
 }
 
+/* Estiliza os links dentro do rodapé */
 footer a {
     color: white;
     font-weight: bolder;
     text-decoration: none;
 }
 
+/* Efeito de hover nos links do rodapé */
 footer a:hover {
     text-decoration: underline;
     color: var(--cor1);
